@@ -5,9 +5,16 @@
   <h1 [hidden]="isHidden" [style.color]="h1Color">
     {{title}} is my first Angular app. My name is {{name}}.
   </h1>
-  <div>
+  <div *ngIf="showDiv">
     <input [(ngModel)]="txtValue" type="text">
     | <label>{{txtValue}}</label>
     | <button (click)="setTxtValue('WTE!');">WTE!</button>
+  </div>
+  <div>
+    <ol>
+      <li *ngFor="let name of names">
+        <span>Name is {{name}}</span>
+      </li>
+    </ol>
   </div>
 </div>
