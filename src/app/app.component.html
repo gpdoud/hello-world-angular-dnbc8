@@ -1,4 +1,16 @@
 <div>
+  <div>
+    <table class="table table-sm">
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+      </tr>
+      <tr *ngFor="let user of users">
+        <td>{{user.id}}</td>
+        <td>{{user.firstname}} {{user.lastname}}</td>
+      </tr>
+    </table>
+  </div>
   <button (click)="setName();">Change Name</button>
   | <button (click)="toggleColor()">Toogle Color</button>
   | <button (click)="flipHidden()">Flip Hidden</button>
