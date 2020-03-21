@@ -8,7 +8,7 @@ import { User } from './user.class';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  
+   
   users: User[];
 
   ngOnInit() {
